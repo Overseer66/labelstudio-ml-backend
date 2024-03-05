@@ -2,7 +2,7 @@ version: "3.11"
 
 services:
   ml-backend:
-    container_name: ml-backend
+    container_name: ml-backend-dino
     build: .
     environment:
       - MODEL_DIR=/data/models
@@ -11,8 +11,8 @@ services:
       - LOG_LEVEL=DEBUG
 
       # Add these variables if you want to access the images stored in Label Studio
-      - LABEL_STUDIO_HOST=
-      - LABEL_STUDIO_ACCESS_TOKEN=
+      - LABEL_STUDIO_HOST=http://192.168.100.180:8080
+      - LABEL_STUDIO_ACCESS_TOKEN=2f2d562054bc7aa704e0c9979eaf5c8355b743ab
 
       # use these if you want to use segment anything instead of bounding box predictions from input text prompts
       - USE_SAM=False  # if you want to automatically generate segment anything model predictions
