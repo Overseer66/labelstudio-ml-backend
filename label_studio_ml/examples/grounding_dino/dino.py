@@ -73,7 +73,7 @@ class DINOBackend(LabelStudioMLBase):
 
         self.use_sam = USE_SAM
         self.use_ms = USE_MOBILE_SAM
-            
+
 
     def predict(self, tasks: List[Dict], context: Optional[Dict] = None, **kwargs) -> List[Dict]:
         if not context or not context.get('result'):
