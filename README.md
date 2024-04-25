@@ -11,7 +11,7 @@ There are several use-cases for the ML backend:
 - Model fine-tuning based on recently annotated data
 
 If you just need to load static pre-annotated data into Label Studio, running an ML backend might be overkill for you. Instead, you can [import preannotated data](https://labelstud.io/guide/predictions.html).
-
+  
 
 ## Quickstart
 
